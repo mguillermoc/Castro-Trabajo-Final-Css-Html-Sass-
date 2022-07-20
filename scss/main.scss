@@ -1,0 +1,58 @@
+//imports
+@import "_vars";
+@import "_fonts";
+@import "_navBar";
+@import "_commons";
+@import "_footer";
+
+
+p{
+    font-size: $textMd;
+    font-weight: $regular;
+}
+
+.min-h{
+    min-height: 400px;
+}
+
+.img-fluid:hover{
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    @include centrar()
+}
+
+.animation1{
+    &hover{
+    transform: scale(1.05);
+    transition: transform .5s ease;
+    overflow: hidden;}
+}
+
+.bg-dark{
+    background-color: $blackColor;
+}
+
+.nav-link{
+    text-decoration: none;
+    &:hover{
+    background-color: $mainColor;
+    @include border-radius(2px)}
+}
+
+.content{
+    margin: 2% 20%;
+}
+
+@each $k, $v in $socialcolor {
+    .social-media-#{$k} {
+        color: $v;
+    }
+}
+
+button{
+    background-color: $grey;
+    @include border-radius(5px);
+    padding:10px;
+    @include centrar()
+}

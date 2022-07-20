@@ -1,0 +1,20 @@
+
+.bg-dark{
+    background-color: $blackColor;
+    border-radius:$redondeado;
+}
+
+.navbar-toggler{
+    align-items: right;
+}
+
+.logo{
+    width: 250px;
+}
+
+.logo2{
+    @extend .logo;
+    &:hover{
+        @include animacion1;
+    }
+}

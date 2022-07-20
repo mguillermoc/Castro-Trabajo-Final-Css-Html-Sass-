@@ -1,0 +1,36 @@
+// variables globales
+$mainColor: rgba(218, 165, 32, 0.363);
+$secondaryColor: rgb(223, 173, 10);
+$whiteColor: #fafafa;
+$blackColor: #232323;
+$grey: lightgray;
+
+// Mixins
+
+@mixin border-radius($radio){
+    -webkit-border-radius:$radio;
+    -moz-border-radius:$radio;
+    -ms-border-radius:$radio;
+    border-radius:$radio;
+}
+
+@mixin centrar(){
+    margin: 0 auto;
+}
+
+@mixin animacion1(){
+    transform: scale(1.05);
+    transition: transform .5s ease;
+    overflow: hidden;
+}
+
+//Maps
+
+$socialcolor:(
+    "facebook":#0078f7,
+    "twitter":#00acee,
+    "youtube": #ff0000
+)
+
+
+
