@@ -5,6 +5,9 @@
 @import "_commons";
 @import "_footer";
 
+body{
+    background-color: $creamcolor;
+}
 
 p{
     font-size: $textMd;
@@ -37,7 +40,8 @@ p{
     text-decoration: none;
     &:hover{
     background-color: $mainColor;
-    @include border-radius(2px)}
+    @include border-radius(2px);
+    color:$blackColor;}
 }
 
 .content{
@@ -55,4 +59,22 @@ button{
     @include border-radius(5px);
     padding:10px;
     @include centrar()
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:5%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+.showcase{
+    margin-bottom: 50px;
 }

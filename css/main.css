@@ -14,6 +14,9 @@
   transition: transform .5s ease;
   overflow: hidden; }
 
+body {
+  background-color: #fffaf1; }
+
 p {
   font-size: 1em;
   font-weight: 400; }
@@ -39,11 +42,12 @@ p {
 .nav-link {
   text-decoration: none; }
   .nav-link:hover {
-    background-color: rgba(218, 165, 32, 0.363);
+    background-color: #ffcb59;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
-    border-radius: 2px; }
+    border-radius: 2px;
+    color: #232323; }
 
 .content {
   margin: 2% 20%; }
@@ -65,3 +69,19 @@ button {
   border-radius: 5px;
   padding: 10px;
   margin: 0 auto; }
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 5%;
+  position: relative;
+  height: 0; }
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.showcase {
+  margin-bottom: 50px; }
