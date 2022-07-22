@@ -1,0 +1,12 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^torredemarfil.com.ar[nc]
+RewriteRule ^(.*)$ http://www.torredemarfil.com.ar/$1 [r=301,nc]
+
+//Change default directory page
+DirectoryIndex index.html
+
+//Prevent directory listings
+Options All -Indexes
+ 
